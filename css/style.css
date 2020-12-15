@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.firstJumbotron{
+    display: none;
+}
+.color-selection{
+    display:none;
+}
+.color-selection h2{
+    margin-bottom: 30px;
+
+}
+
+#yellow{
+    height: 150px;
+    width:150px;
+    border-radius: 50%;
+}
+
+#red{
+    height: 150px;
+    width:150px;
+    border-radius: 50%;
+}
+
+
+.yellow{
+    color: ##f0ad4e;
+}
+
+.red{
+    color: #d9534f;
+}
+
+
+.intro{
+    display:flex;
+    background-color: #0275d8;
+    height: 50px;
+
+}
+
+#turnDisplay{
+    display: flex;
+    justify-content:flex-start;
+}
+#turnDisplay h4{
+    color: white;
+    margin-top 20px;
+}
+#replay{
+
+}
+.board{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background-color: #5bc0de;
+    border: 2px solid #f0ad4e;
+    border-radius:25px;
+}
+
+.connectFourBoard{
+    height: 100%;
+    widows: 100%;
+}
+
+.cell{
+    border: 2px solid #f0ad4e;
+    background-color: white;
+    border-radius: 50%;
+    height :100px;
+    width: 100px;
+    margin:5px;
+
+}
