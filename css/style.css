@@ -4,10 +4,20 @@ html, body {
 }
 
 .firstJumbotron{
-    display: none;
+    border-radius:25px;
+    margin-top:20px;
+    background-color: #0275d8;
 }
-.color-selection{
-    display:none;
+.firstJumbotron h1,p{
+    color: white;
+}
+hr{
+    border: 2px solid #5bc0de;
+    border-radius: 5px;
+}
+
+#turn{
+    color:white;
 }
 .color-selection h2{
     margin-bottom: 30px;
@@ -26,15 +36,11 @@ html, body {
     border-radius: 50%;
 }
 
-
-.yellow{
-    color: ##f0ad4e;
+.connectFourBoard{
+    height: 100%;
+    widows: 100%;
+    display: none;
 }
-
-.red{
-    color: #d9534f;
-}
-
 
 .intro{
     display:flex;
@@ -47,12 +53,12 @@ html, body {
     display: flex;
     justify-content:flex-start;
 }
-#turnDisplay h4{
+#textIntro{
     color: white;
     margin-top 20px;
 }
 #replay{
-
+    visibility: hidden;
 }
 .board{
     margin-top: 50px;
@@ -60,19 +66,34 @@ html, body {
     background-color: #5bc0de;
     border: 2px solid #f0ad4e;
     border-radius:25px;
+    cursor: pointer;
 }
 
-.connectFourBoard{
-    height: 100%;
-    widows: 100%;
-}
+
 
 .cell{
     border: 2px solid #f0ad4e;
     background-color: white;
     border-radius: 50%;
-    height :100px;
-    width: 100px;
-    margin:5px;
+    height :90px;
+    width: 90px;
+    margin:15px;
+    padding: 0;
 
+}
+
+.cell:hover{
+    background: rgb(174, 244, 255);
+}
+
+.hidden{
+    display: none;
+}
+
+.yellow{
+    background-color: #f0ad4e;
+}
+
+.red{
+    background-color: #d9534f;
 }

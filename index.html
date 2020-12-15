@@ -10,10 +10,7 @@
 </head>
 <body>
 <!--
-1) jumbotron welcome to game
-2) choose color
-3) go to game
-4) actual game ui
+
 5) write javascript code powering the game
 -->
 
@@ -23,16 +20,16 @@
             <h1 class="display-4 ">Connect four</h1>
             <p class="lead ">Welcome to connect four, enjoy the game!</p>
             <hr class="my-4 ">
-             <span id="turn">The object of this game is to connect four of your chips in a row.</span>
+             <span id="turn">The objective of this game is to connect four of your chips in a row.</span>
         </div>
     </div>
     <!--Choose color button-->
    <div class="container-md d-flex justify-content-center text-center">
     <div id="intro-screen" class="color-selection">
-        <h2>Choose your symbol:</h2>
+        <h2>Choose your chip:</h2>
         <div class="row justify-content-md-center">
             <div class="col d-flex justify-content-center text-center ">
-                <button class="btn btn-primary btn-lg" id="blue" ></button>
+                <button class="btn btn-warning btn-lg" id="yellow" ></button>
             </div>
             <div class="col d-flex justify-content-center text-center ">
             <button class="btn btn-danger btn-lg" id="red"></button>
@@ -45,8 +42,7 @@
     <!-- Connect four board-->
     <div class="container-fluid text-center connectFourBoard">
         <div class ="row intro">
-            <div class='col d-flex justify-content-start text-center mt-2 mb-1' id='turnDisplay'>
-                <h4>  Red's Turn</h4>
+            <div class='col d-flex justify-content-start text-center mt-2 mb-1' id='turnDisplay'><h4 id="textIntro"></h4>
             </div>
             <div class ='col justify-content-end mt-1 mb-1'>
                 <div class='container justify-content-end '>
@@ -56,50 +52,67 @@
         </div>
         <div class='container justify-content-center board'>
         <div class ="row justify-content-around">
-            <div class="col cell" id="cell1"></div>
-            <div class="col cell" id="cell2"></div>
-            <div class="col cell" id="cell3"></div>
-            <div class="col cell" id="cell4"></div>
-            <div class="col cell" id="cell5"></div>
-            <div class="col cell" id="cell6"></div>
-            <div class="col cell" id="cell7"></div>
+            <div class="col cell"></div>
+            <div class="col cell" ></div>
+            <div class="col cell" ></div>
+            <div class="col cell" ></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell" ></div>
         </div>
         <div class ="row justify-content-around">
-            <div class="col cell" id="cell8"></div>
-            <div class="col cell" id="cell9"></div>
-            <div class="col cell" id="cell10"></div>
-            <div class="col cell" id="cell11"></div>
-            <div class="col cell" id="cell12"></div>
-            <div class="col cell" id="cell13"></div>
-            <div class="col cell" id="cell14"></div>
+            <div class="col cell"></div>
+            <div class="col cell" ></div>
+            <div class="col cell" ></div>
+            <div class="col cell"> </div>
+            <div class="col cell"></div>
+            <div class="col cell" ></div>
+            <div class="col cell" ></div>
         </div>
         <div class ="row justify-content-around">
-            <div class="col cell" id="cell15"></div>
-            <div class="col cell" id="cell16"></div>
-            <div class="col cell" id="cell17"></div>
-            <div class="col cell" id="cell18"></div>
-            <div class="col cell" id="cell19"></div>
-            <div class="col cell" id="cell20"></div>
-            <div class="col cell" id="cell21"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
         </div>
         <div class ="row justify-content-around">
-            <div class="col cell" id="cell22"></div>
-            <div class="col cell" id="cell23"></div>
-            <div class="col cell" id="cell24"></div>
-            <div class="col cell" id="cell25"></div>
-            <div class="col cell" id="cell26"></div>
-            <div class="col cell" id="cell27"></div>
-            <div class="col cell" id="cell28"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
         </div>
         <div class ="row justify-content-around">
-            <div class="col cell" id="cell29"></div>
-            <div class="col cell" id="cell30"></div>
-            <div class="col cell" id="cell31"></div>
-            <div class="col cell" id="cell32"></div>
-            <div class="col cell" id="cell33"></div>
-            <div class="col cell" id="cell34"></div>
-            <div class="col cell" id="cell35"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell" ></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell" ></div>
+            <div class="col cell"></div>
         </div>
+        <div class ="row justify-content-around">
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+            <div class="col cell"></div>
+        </div>
+        <div class ="row justify-content-around hidden">
+            <div class="col cell taken"></div>
+            <div class="col cell taken"></div>
+            <div class="col cell taken"></div>
+            <div class="col cell taken"></div>
+            <div class="col cell taken"></div>
+            <div class="col cell taken"></div>
+            <div class="col cell taken"></div>
         </div>
     </div>
    <!-- Jquery, Javascript Bootstrap, script -->
