@@ -76,8 +76,15 @@ function checkVictory(){
                             [0,8,16,24],[8,16,24,32],[16,24,32,40],
                             [1,9,17,25],[9,17,25,33],[17,25,33,41],
                             [2,10,18,26],[10,18,26,34],
-                            [3,11,19,27]];
-    for (var i =0; i < cells.length; i++){
+                            [3,11,19,27],
+                            [38,32,26,20],
+                            [37,31,25,19],[31,25,19,13],
+                            [36,30,4,18],[30,24,18,12],[24,18,12,6],
+                            [35,29,23,17],[29,23,17,11],[23,17,11,5],
+                            [28,22,16,10],[22,16,10,4],
+                            [21,15,9,3]
+                            ];
+   for (var i =0; i < winningCombination.length; i++){
         var cell1 = cells[winningCombination[i][0]];
         var cell2 = cells[winningCombination[i][1]];
         var cell3 = cells[winningCombination[i][2]];
@@ -94,7 +101,6 @@ function checkVictory(){
         }
     }
 };
-
 function playAgain() {
     for (var i=0; i<cells.length; i++){
         cells[i].classList.remove(playerColor);
@@ -106,7 +112,6 @@ function playAgain() {
         replay.style.visibility = 'hidden';
     }
 };
-
 //********************************************
 // select color and transition to connect four board
 //********************************************
@@ -121,7 +126,6 @@ chooseRed.addEventListener('click', function(){
     displayBoard();
     changeTurnMessage(playerColor);
 });
-
 
 //********************************************
 // Connect four logic, draw the chips in and determine winner
@@ -164,6 +168,11 @@ for (var i = 0; i < cells.length; i++)
 replay.addEventListener('click', function(){
     playAgain();
 });
+
+
+
+
+
 
 
 
