@@ -97,3 +97,11 @@ hr{
 .red{
     background-color: #d9534f;
 }
+
+.yellow-win{
+    background-color: #ffff00;
+}
+
+.red-win{
+    background-color: #ff0000 ;
+}
