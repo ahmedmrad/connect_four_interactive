@@ -113,11 +113,13 @@ function playAgain() {
 chooseYellow.addEventListener('click', function(){
     selectYellow();
     displayBoard();
+    changeTurnMessage(playerColor);
 });
 
 chooseRed.addEventListener('click', function(){
     selectRed();
     displayBoard();
+    changeTurnMessage(playerColor);
 });
 
 

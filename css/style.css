@@ -7,12 +7,14 @@ html, body {
     border-radius:25px;
     margin-top:20px;
     background-color: #0275d8;
+    box-shadow:10px 10px 25px 5px #025ead inset;
 }
 .firstJumbotron h1,p{
     color: white;
 }
 hr{
     border: 2px solid #5bc0de;
+    box-shadow:10px 10px 25px 5px #018aa7 inset;
     border-radius: 5px;
 }
 
@@ -28,12 +30,14 @@ hr{
     height: 150px;
     width:150px;
     border-radius: 50%;
+    box-shadow:4px 4px 7px 2px #eb9214 inset;
 }
 
 #red{
     height: 150px;
     width:150px;
     border-radius: 50%;
+    box-shadow:4px 4px 7px 2px #c32e2a inset;
 }
 
 .connectFourBoard{
@@ -45,6 +49,7 @@ hr{
 .intro{
     display:flex;
     background-color: #0275d8;
+    box-shadow:10px 10px 25px 5px #025ead inset;
     height: 50px;
 
 }
@@ -59,12 +64,14 @@ hr{
 }
 #replay{
     visibility: hidden;
+    box-shadow:10px 10px 25px 5px #439a43 inset;
 }
 .board{
     margin-top: 50px;
     margin-bottom: 10px;
     background-color: #5bc0de;
-    border: 2px solid #f0ad4e;
+    box-shadow:10px 10px 25px 5px #018aa7 inset;
+    border: 2px solid #00152c;
     border-radius:25px;
     cursor: pointer;
 }
@@ -72,7 +79,7 @@ hr{
 
 
 .cell{
-    border: 2px solid #f0ad4e;
+    border: 2px solid #00152c;
     background-color: white;
     border-radius: 50%;
     height :90px;
@@ -83,7 +90,8 @@ hr{
 }
 
 .cell:hover{
-    background: rgb(174, 244, 255);
+    background: #AEF4FF;
+    box-shadow:4px 4px 7px 2px #58e8ff inset;
 }
 
 .hidden{
@@ -92,16 +100,20 @@ hr{
 
 .yellow{
     background-color: #f0ad4e;
+    box-shadow:4px 4px 7px 2px #eb9214 inset;
 }
 
 .red{
     background-color: #d9534f;
+    box-shadow:4px 4px 7px 2px #c32e2a inset;
 }
 
 .yellow-win{
     background-color: #ffff00;
+    box-shadow:4px 4px 7px 2px#ffff40 inset;
 }
 
 .red-win{
     background-color: #ff0000 ;
+    box-shadow:4px 4px 7px 2px #ff4040 inset;
 }
